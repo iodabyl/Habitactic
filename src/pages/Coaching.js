@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../components/RoomsHero'
+import Hero from '../components/CoachingHero'
 import coaching_0 from '../images/coaching_0.jpg'
 
 export default function Coaching() {
@@ -8,19 +8,22 @@ export default function Coaching() {
     <Hero />
     <section className="section">
             <section className="coaching-body">
-                <div className="coaching-block back-wiggle">
+                {/* <div className="coaching-block back-wiggle"> */}
+                <div className="coaching-block bkgd-white">
                     <div className="coaching-center">
-                        <div className="coaching-img-container container-40"><img src={coaching_0} alt="Why ILL" /></div>
-                        <div className="details container-60">
-                            <h2 className='navy'>Why Ivy League Learners?</h2>
-                            <p className='dark-grey'>The ability to learn is the most important skill of the 21st century.  It is a lifelong skill to help you through high school, college and beyond.  However it is a skill that traditional educational institutions cannot teach, as it must be discovered and honed individually.  Ivy League Learners gives you the individualized support to discover your unique learning style, and the tools to maximize your potential.  Unlock the Ivy League Learner inside you today!</p>
+                        {/* <div className="coaching-img-container container-40"><img src={coaching_0} alt="Why ILL" /></div> */}
+                        <div className="details container-100">
+                            <h2 className='navy'>Why Habitactic?</h2>
+                            <p className='dark-grey indent'>The ability to learn is the most important skill of the 21st century.  It is a lifelong skill to help you through high school, college and beyond.  However it is a skill that traditional educational institutions cannot teach, as it must be discovered and honed individually.  Habitactic gives you the individualized support to discover your unique learning style, and the tools to maximize your potential.</p>
+                            <p className="dark-grey indent"></p>
                         </div>
                     </div>
                 </div>
-                <div className="coaching-block back-hexagon">
-                    <div className="back-gradient-green cover100">
+                {/* <div className="coaching-block back-hexagon"> */}
+                <div className="coaching-block bkgd-green">
+                    {/* <div className="back-gradient-green cover100"> */}
                     <div className="coaching-center">
-                    <div className="details container-60">
+                        <div className="details container-60">
                             <h2 className='white'>1. Start with free One-on-One consultation</h2>
                             <p className='white'>We start with three risk free consultation sessions to get to know you, your goals, habits, strengths and weaknesses.</p>
                             <ol className='white'>
@@ -31,9 +34,11 @@ export default function Coaching() {
                         </div>
                         <div className="coaching-img-container container-40"><img src={coaching_0} alt="Why ILL" /></div>
                     </div>
-                    </div>
+                    {/* </div> */}
+                    <div className="blur-green-white"></div>
                 </div>
-                <div className="coaching-block back-bamboo">
+                {/* <div className="coaching-block back-bamboo"> */}
+                <div className="coaching-block bkgd-white">
                     <div className="coaching-center">
                         <div className="coaching-img-container container-40"><img src={coaching_0} alt="Why ILL" /></div>
                         <div className="details container-60">
@@ -43,9 +48,11 @@ export default function Coaching() {
                         </div>
                     </div>
                 </div>
-                <div className="coaching-block back-diamond">
+                {/* <div className="coaching-block back-diamond"> */}
+                <div className="coaching-block bkgd-green">
+                    {/* <div className="back-gradient-green cover100"> */}
                     <div className="coaching-center">
-                    <div className="details container-60">
+                        <div className="details container-60">
                             <h2 className='white'>3. Personalized Suite of Tools</h2>
                             <p className='white'>We work to find the best combination of study, and management tools to develop your own learning style.</p>
                             <ul className='white dot'>
@@ -56,8 +63,10 @@ export default function Coaching() {
                         </div>
                         <div className="coaching-img-container container-40"><img src={coaching_0} alt="Why ILL" /></div>
                     </div>
+                    {/* </div> */}
                 </div>
-                <div className="coaching-block back-wiggle">
+                {/* <div className="coaching-block back-wiggle"> */}
+                <div className="coaching-block bkgd-white">
                     <div className="coaching-center">
                     <div className="coaching-img-container container-40"><img src={coaching_0} alt="Why ILL" /></div>
                     <div className="details container-60">
@@ -71,10 +80,11 @@ export default function Coaching() {
                         </div>
                     </div>
                 </div>
-                <div className="coaching-block back-hexagon">
-                    <div className="back-gradient-green cover100">
+                {/* <div className="coaching-block back-hexagon"> */}
+                <div className="coaching-block bkgd-green">
+                    {/* <div className="back-gradient-green cover100"> */}
                     <div className="coaching-center">
-                    <div className="details container-60">
+                        <div className="details container-60">
                             <h2 className='white'>5. Expand Beyond the Classroom</h2>
                             <p className='white'>Support for finding programs and extracurriculars outside of the classroom to take advantage of unique opportunities offered to high school scholars.</p>
                             <p className='white'>Find unique opportunities from a wide range of options including</p>
@@ -87,9 +97,12 @@ export default function Coaching() {
                         </div>
                         <div className="coaching-img-container container-40"><img src={coaching_0} alt="Why ILL" /></div>
                     </div>
-                    </div>
+                    {/* </div> */}
+                    <div className="blur-green-brown"></div>
                 </div>
-                <div className="coaching-block back-bamboo">
+                {/* <div className="coaching-block back-bamboo"> */}
+                <div className="coaching-block bkgd-brown">
+                    {/* <div className="back-brown cover100"> */}
                     <div className="coaching-center">
                         <div className="coaching-img-container container-40"><img src={coaching_0} alt="Why ILL" /></div>
                         <div className="details container-60">
@@ -98,6 +111,7 @@ export default function Coaching() {
                             <p className='dark-grey'>Get a leg up on your college planning by starting early with your mentor!</p>
                         </div>
                     </div>
+                    {/* </div> */}
                 </div>
             </section>
     </section>

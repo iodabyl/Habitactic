@@ -7,7 +7,7 @@ export default function Services() {
     const [service, setService] = useState(0);
     const {title, details} = ServiceDetails[service].fields
   return (
-    <section className="back-wiggle section">
+    <section className="section">
         <div className="services-center section-center">
             <div className="section-title">
                 <h2 className='btm0px'>Our Services</h2>
@@ -56,7 +56,7 @@ export default function Services() {
                 <h3>{title}</h3>
                 <p>{details}</p>
             </div>
-           <Link to='/rooms' className='btn btn-primary'>Learn more</Link>
+           <Link to='/coaching' className='btn btn-primary'>Learn more</Link>
         </div>
     </section>
   );

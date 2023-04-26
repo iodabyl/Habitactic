@@ -1,10 +1,10 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import Error from './pages/Error'
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
-import OurRooms from './pages/OurRooms';
-import SingleRoom from './pages/SingleRoom';
+import Error from './pages/Error';
+import About from './pages/About';
+import Signup from './pages/Signup';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Coaching from './pages/Coaching';
 
 function App() {
@@ -12,23 +12,25 @@ function App() {
     <div className="App">
       <Router>
       <Navbar />
+      <div className="main">
         <Switch>
           <Route exact path='/'>
             <Home />
           </Route>
-          <Route exact path='/rooms'>
-            <OurRooms />
+          <Route exact path='/about'>
+            <About />
           </Route>
           <Route exact path='/coaching'>
             <Coaching />
           </Route>
-          <Route path='/rooms/:slug'>
-            <SingleRoom />
+          <Route path='/contact'>
+            <Signup />
           </Route>
           <Route path='*'>
             <Error />
           </Route>
         </Switch>
+        /</div>
       </Router>
     </div>
   );
