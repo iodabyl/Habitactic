@@ -6,6 +6,7 @@ import About from './pages/About';
 import Signup from './pages/Signup';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Coaching from './pages/Coaching';
+import Confirmation from './pages/Confirmation';
 
 function App() {
   return (
@@ -25,6 +26,9 @@ function App() {
           </Route>
           <Route path='/contact'>
             <Signup />
+          </Route>
+          <Route path='/confirm'>
+            <Confirmation />
           </Route>
           <Route path='*'>
             <Error />
