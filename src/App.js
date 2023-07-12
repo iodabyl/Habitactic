@@ -34,7 +34,7 @@ function App() {
             <Error />
           </Route>
         </Switch>
-        /</div>
+        </div>
       </Router>
     </div>
   );

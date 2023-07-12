@@ -46,6 +46,7 @@ const Signup = () => {
   const history = useHistory();
   const [form] = Form.useForm();
   const [api, contextHolder] = notification.useNotification();
+  const {TextArea} = Input;
 
   const onFinish = useCallback(
     async ({ email, responder, studentName, studentGrade, studentSchool, parentName, country,  goals, questions}) => {
@@ -84,81 +85,93 @@ const Signup = () => {
   return (
     <>
       {contextHolder}
-      <Form
-        form={form}
-        layout="vertical"
-        wrapperCol={{ span: 18 }}
-        onFinish={onFinish}
-      >
-        <Form.Item
-          name="email"
-          label="Email"
-          rules={[{ required: true, message: 'Email address is required' }]}
-        >
-          <Input />
-        </Form.Item>
-        <Form.Item
-          name="responder"
-          label="I am a ..."
-          rules={[{ required: true, message: 'Please select one of the two options' }]}
-        >
-          <Radio.Group>
-            <Space direction="vertical">
-              <Radio value="Student">Student</Radio>
-              <Radio value="Parent / Guardian">Parent / Guardian</Radio>
-            </Space>
-          </Radio.Group>
-        </Form.Item>
-        <Form.Item
-          name="studentName"
-          label="Student Name"
-          rules={[{ required: true, message: 'Please enter the name of the student' }]}
-        >
-          <Input />
-        </Form.Item>
-        <Form.Item
-          name="studentGrade"
-          label="Student Grade"
-          rules={[{ required: true, message: 'Please enter the grade level of the student' }]}
-        >
-          <Input />
-        </Form.Item>
-        <Form.Item
-          name="studentSchool"
-          label="Student School"
-        >
-          <Input />
-        </Form.Item>
-        <Form.Item
-          name="parentName"
-          label="Parent / Guardian Name"
-          rules={[{ required: true, message: 'Please enter the name of the Parent / Guardian' }]}
-        >
-          <Input />
-        </Form.Item>
-        <Form.Item
-          name="country"
-          label="Country"
-          rules={[{ required: true, message: 'Please enter the country you live in' }]}
-        >
-          <Input />
-        </Form.Item>
-        <Form.Item
-          name="goals"
-          label="What goals can we help you with?"
-        >
-          <Input />
-        </Form.Item>
-        <Form.Item
-          name="questions"
-          label="Additional Questions / Inquiries"
-        >
-          <Input />
-        </Form.Item>
-        <Button type="primary" htmlType="submit">
-          Submit
-        </Button>
-      </Form>
+      <section className="section">
+        <section className="section-center top-0">
+          <div className="section-title">
+            <h3 className='btm0px'>How can we help you?</h3>
+            <div className="underline-2"><span></span></div>
+          </div>
+          <div className="signup-center">
+            <Form
+              form={form}
+              layout="vertical"
+              wrapperCol={{ span: 18 }}
+              onFinish={onFinish}
+            >
+              <Form.Item
+                name="email"
+                label="Email"
+                rules={[{ required: true, message: 'Email address is required' }]}
+              >
+                <Input />
+              </Form.Item>
+              <Form.Item
+                name="responder"
+                label="I am a ..."
+                rules={[{ required: true, message: 'Please select one of the two options' }]}
+              >
+                <Radio.Group>
+                  <Space direction="vertical">
+                    <Radio value="Student">Student</Radio>
+                    <Radio value="Parent / Guardian">Parent / Guardian</Radio>
+                  </Space>
+                </Radio.Group>
+              </Form.Item>
+              <Form.Item
+                name="studentName"
+                label="Student Name"
+                rules={[{ required: true, message: 'Please enter the name of the student' }]}
+              >
+                <Input />
+              </Form.Item>
+              <Form.Item
+                name="studentGrade"
+                label="Student Grade"
+                rules={[{ required: true, message: 'Please enter the grade level of the student' }]}
+              >
+                <Input />
+              </Form.Item>
+              <Form.Item
+                name="studentSchool"
+                label="Student School"
+              >
+                <Input />
+              </Form.Item>
+              <Form.Item
+                name="parentName"
+                label="Parent / Guardian Name"
+                rules={[{ required: true, message: 'Please enter the name of the Parent / Guardian' }]}
+              >
+                <Input />
+              </Form.Item>
+              <Form.Item
+                name="country"
+                label="Country"
+                rules={[{ required: true, message: 'Please enter the country you live in' }]}
+              >
+                <Input />
+              </Form.Item>
+              <Form.Item
+                name="goals"
+                label="What goals can we help you with?"
+              >
+                <TextArea rows={3}/>
+              </Form.Item>
+              <Form.Item
+                name="questions"
+                label="Additional Questions / Inquiries"
+              >
+                <TextArea rows={3}/>
+              </Form.Item>
+              <Button type="primary" htmlType="submit">
+                Submit
+              </Button>
+            </Form>
+          </div>
+        
+        </section>
+      </section>
+      
     </>
   );
 };

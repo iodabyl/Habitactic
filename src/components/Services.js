@@ -1,11 +1,33 @@
 import React, {useState} from 'react';
 import ServiceDetails from './ServiceDetails'
-import {FaMapSigns, FaMapMarkedAlt, FaToolbox, FaRocket, FaEdit, FaUserGraduate} from 'react-icons/fa'
+import {FaMapSigns, FaMapMarkedAlt, FaToolbox, FaRocket, FaEdit, FaUserGraduate, FaChevronLeft, FaChevronRight} from 'react-icons/fa'
 import {Link} from 'react-router-dom'
 
 export default function Services() {
     const [service, setService] = useState(0);
     const {title, details} = ServiceDetails[service].fields
+    const checkNumber = (number) => {
+        if (number > 5) {
+          return 0;
+        }
+        if (number < 0) {
+          return 5;
+        }
+        return number;
+    };
+    const nextPerson = () => {
+        setService((service) => {
+          let newIndex = service + 1;
+          return checkNumber(newIndex);
+        });
+    };
+      const prevPerson = () => {
+        setService((service) => {
+          let newIndex = service - 1;
+          return checkNumber(newIndex);
+        });
+    };
+
   return (
     <section className="section">
         <div className="services-center section-center">
@@ -52,9 +74,17 @@ export default function Services() {
                     </button>
                 </div>
             </div>
-            <div className="service-description">
-                <h3>{title}</h3>
-                <p>{details}</p>
+            <div className="service-panel">
+                <button className='prev-btn' onClick={prevPerson}>
+                    <FaChevronLeft />
+                </button>
+                <div className="service-description">
+                    <h3>{title}</h3>
+                    <p>{details}</p>
+                </div>
+                <button className='next-btn' onClick={nextPerson}>
+                    <FaChevronRight />
+                </button>
             </div>
            <Link to='/coaching' className='btn btn-primary'>Learn more</Link>
         </div>
