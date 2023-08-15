@@ -39,10 +39,10 @@ export default function Coaching() {
                     {/* <div className="back-gradient-green cover100"> */}
                     <div className="coaching-center">
                         <div className="details container-60">
-                            <h2 className='navy'>Step 1: Two risk free sessions</h2>
+                            <h2>Step 1: Two risk free sessions</h2>
                             <div className="details-text">
-                                <p className='dark-grey'>We start with two free sessions to help you decide if Habitactic is right for you!</p>
-                                <ol className='dark-grey'>
+                                <p>We start with two free sessions to help you decide if Habitactic is right for you!</p>
+                                <ol>
                                     <li><p>An expert consultation session to get to know your needs, and goals.</p></li>
                                     <li><p>A trial coaching session to assess current proficiencies and opportunities for growth.</p></li>
                                 </ol>
@@ -50,18 +50,15 @@ export default function Coaching() {
                         </div>
                         <div className="coaching-img-container container-40"><img src={coaching1} alt="Why ILL" /></div>
                     </div>
-                    {/* </div> */}
-                    {/* <div className="blur-green-white"></div> */}
                 </div>
-                {/* <div className="coaching-block back-bamboo"> */}
                 <div className="coaching-block bkgd-white">
                     <div className="coaching-center">
                         <div className="coaching-img-container container-40"><img src={coaching2} alt="Why ILL" /></div>
                         <div className="details container-60">
-                            <h2 className='navy'>Step 2: Your Personalized Roadmap</h2>
+                            <h2>Step 2: Your Personalized Roadmap</h2>
                             <div className="details-text">
-                                <p className='dark-grey'>Based off the initial consultation and coaching session we will create your personalized roadmap to success.</p>
-                                <p className='dark-grey'>This first big-picture roadmap will help you visualize the skills and habits you will build on your road to success.</p>
+                                <p>Based off the initial consultation and coaching session we will create your personalized roadmap to success.</p>
+                                <p>This first big-picture roadmap will help you visualize the skills and habits you will build on your road to success.</p>
                             </div>
                         </div>
                     </div>
@@ -71,7 +68,7 @@ export default function Coaching() {
                     {/* <div className="back-gradient-green cover100"> */}
                     <div className="coaching-center">
                         <div className="details container-60">
-                            <h2 className='navy'>Step 3: Individual Suite of Tools</h2>
+                            <h2>Step 3: Individual Suite of Tools</h2>
                             <div className="details-text">
                                 <p className='dark-grey'>We work to find the best combination of study, and management tools to develop your own learning style.</p>
                                 <ul className='dark-grey dot'>

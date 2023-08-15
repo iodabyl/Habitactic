@@ -5,24 +5,15 @@
  =============
  */
 :root{
-  --primaryLightColor: #d3d3d3;
-  --primaryBlue: #3fb6dd;
-  --primaryDarkBlue: #09017f;
-  --primaryWhite: #efefef;
-  --primaryOrange: #a37f3b;
-  --secondaryOrange: #f3b029;
+  --primaryBlue: #007DFE;
+  --primaryWhite: #ffffff;
+  --primaryOrange: #FF735C;
+  --secondaryOrange: #bc8f47;
   --primaryBlack: #0f0f0f;
-  --secondaryBlack: #2C2C29;
-  --primaryGrey: #bdbdbd;
-  --primaryGreen: #637A39;
-  --primaryGreen05: #637A3988;
-  --secondaryGreen: #395606;
-  --primaryDarkGrey: #777777;
+  --primaryGreen: #5C643A;
   --sectionMaxWidth: 1080px;
   --wideSectionMaxWidth: 1180px;
   --transition: all 0.3s linear;
-  --secondaryGreen05: #39560688;
-  --primaryMagenta: #57342A;
 }
 
 /*
@@ -332,7 +323,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox=
   height: 40vw;
 }
 .hero-coaching{
-  height: 40vh;
+  height: 43vw;
 }
 .hero-center {
   align-self: center;
@@ -435,14 +426,14 @@ background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox=
   cursor: pointer;
 }
 .service button:hover .service-icon{
-  color: var(--primaryGreen);
+  color: var(--primaryOrange);
 }
 .service-icon{
-  color: var(--primaryOrange);
+  color: var(--primaryGreen);
   font-size: 3rem;
 }
 .active-service{
-  color: var(--primaryGreen);
+  color: var(--primaryOrange);
 }
 .service-description{
   width: 100%;
@@ -496,9 +487,14 @@ background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox=
 }
 .coaching-center{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   padding: 25px 0px;
   align-items: center;
+}
+@media screen and (min-width:780px) {
+  .coaching-center{
+    flex-direction: row;
+  }
 }
 .container-40{
   flex: 4;
@@ -521,9 +517,6 @@ background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox=
   width: 100%;
   object-fit: cover;
   display: block;
-}
-.details-text{
-  margin-left: 25px;
 }
 .details-text ul{
   margin-left: 25px;
