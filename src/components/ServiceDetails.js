@@ -14,7 +14,7 @@ export default [
     },
     fields: {
       title: "2. Finding a Personalized Plan to Fit Your Needs",
-      details: "Determine the best steps to take to build on your strengths, and reinforce your areas of opportunity.  Tailored assistence will help you reach your personal goals, and find your passions in and out of the classroom.",
+      details: "Determine the best steps to take to build on your strengths, and reinforce your areas of opportunity.  Tailored assistance will help you reach your personal goals, and find your passions in and out of the classroom.",
     }
   },
   {
@@ -41,7 +41,7 @@ export default [
     },
     fields: {
       title: "5. Look to Maximize your Extracurriculars to Find your Element",
-      details: "Help you find and explore opportunities outside of your school, with the goal of helping you find your passions across a wide array of disciplines.  We aim to assist students in finding and applying for extracurricular programs, camps, volunteering, scholarships and much more to expand your opportunities outside of the classroom.",
+      details: "Help you find and explore opportunities outside of your school, with the goal of exploring your passions across a wide array of disciplines.  We aim to assist students in finding and applying for extracurricular programs, camps, volunteering, scholarships and much more.",
     }
   },
   {

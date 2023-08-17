@@ -36,6 +36,11 @@ function App() {
         </Switch>
         </div>
       </Router>
+      <div className="footer">
+        <p>Copyright of Habitactic, 2023</p>
+        <p>Contact us at: info@habitactic.com</p>
+        <a className="dark-grey" href="https://www.freepik.com/author/stories">All vectors by storyset on Freepik</a>
+      </div>
     </div>
   );
 }

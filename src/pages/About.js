@@ -57,8 +57,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="coaching-block bkgd-white">
-                    <div className="coaching-center">
-                        <div className="coaching-img-container container-40 team-pic-div"><img src={sarah} alt="Why ILL" /></div>
+                    <div className="coaching-center flex-row-rev">
                         <div className="details container-60">
                             <h3 className='navy'>Hi, I'm Takami!</h3>
                             <div className="details-text">
@@ -79,6 +78,7 @@ export default function About() {
                                 </p>
                             </div>
                         </div>
+                        <div className="coaching-img-container container-40 team-pic-div"><img src={sarah} alt="Why ILL" /></div>
                     </div>
                 </div>
     </section>

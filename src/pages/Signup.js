@@ -86,7 +86,7 @@ const Signup = () => {
     <>
       {contextHolder}
       <section className="section">
-        <section className="section-center top-0">
+        <section className="section-center top-4">
           <div className="section-title">
             <h3 className='btm0px'>How can we help you?</h3>
             <div className="underline-2"><span></span></div>
@@ -163,7 +163,7 @@ const Signup = () => {
               >
                 <TextArea rows={3}/>
               </Form.Item>
-              <Button type="primary" htmlType="submit">
+              <Button className='btn submit' type="primary" htmlType="submit">
                 Submit
               </Button>
             </Form>

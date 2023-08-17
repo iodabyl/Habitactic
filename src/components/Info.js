@@ -1,5 +1,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
+import landing1 from '../images/Landing1.jpg'
+
 
 export default function Info() {
   return (
@@ -9,21 +11,21 @@ export default function Info() {
                 <h2 className='btm0px'>Why Habitactic</h2>
                 <div className="underline-2"><span></span></div>
             </div>
-            <div className="info-body">
-                <h4>At Habitactic we believe that every student learns differently and that instruction should be personalized to help them discover how they learn best.  
-                    The name Habitactic reflects our approach for helping students discover their potential, through a combination of good study habits and effective tactics.
-                    <br /><br />
-                    Habit: An acquired behavior that has become nearly involuntary.
-                    <br />
-                    The goal of building good study habits is to make learning routine, thereby reducing the stress of studying, and making learning more enjoyable.
-                    <br /><br />
-                    Tactic: A plan for promoting a desired result.
-                    <br />
-                    All studying is not created equal.  Tactics are the tools a student can employ to allow them to make their studying more effective.
-                    <br /><br />
-                    There is no one size fits all approach for a student to succeed.  We put this belief into action by working with each student to discover how they learn best,
-                    helping them employ these practices both in and out of school.
-                </h4>
+            <div className="coaching-center flex-row-rev">
+                <div className="details container-60">
+                    <p>
+                        At Habitactic we believe that every student learns differently and that instruction should be personalized to help them discover how they learn best.  
+                        Our approach centers around one-on-one tutoring to internalize:
+                        <br /><br />
+                        Habits: Acquired behaviors that have become nearly involuntary.
+                        <br />
+                        Tactics: Realized plans for promoting desired results.
+                        <br /><br />
+                        The goal of this approach is to make learning easier by making it routine, while providing students with the roadmap and tools necessary to improve their learning quality and efficiency.
+                        Work together with your Habitactic mentor to revolutionize your learning.
+                    </p>
+                </div>
+                <div className="coaching-img-container container-40"><img src={landing1} alt="Success" /></div>
             </div>
         </div>
     </section>
